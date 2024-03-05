@@ -20,7 +20,7 @@ def main():
         cleaner.style = True
 
         response = cleaner.clean_html(response)
-        filename = 'выкачка/%s-%s.html' % (str(i), url[18:])
+        filename = 'выкачка/%s.html' % (str(i))
         with open(filename, "wb") as htmlFile:
             htmlFile.write(response)
 
